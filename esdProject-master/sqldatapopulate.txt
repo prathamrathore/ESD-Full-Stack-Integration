@@ -1,0 +1,34 @@
+insert into employee (email, first_name, last_name, title) values ("email2@gmail.com", "parul", "jain", "faculty");
+insert into employee (email, first_name, last_name, title) values ("email2@gmail.com", "parul", "jain", "faculty");
+insert into employee (email, first_name, last_name, title) values ("email3@gmail.com", "paridhi", "jain", "faculty");
+insert into employee (email, first_name, last_name, title) values ("email4@gmail.com", "pankhuri", "jain", "faculty");
+insert into course (capacity, course_code, credit, name, term, year) values (12, "cs513", 3, "esd", 3, 3);
+insert into course (id, capacity, course_code, credit, name, term, year) values (0, 12, "cs513", 3, "esd", 3, 3);
+insert into course (id, capacity, course_code, credit, name, term, year) values (1, 12, "cs511", 3, "algo", 3, 3);
+
+
+insert into student (email, first_name, roll_number, total_credits) values ("1@gma.com", "student2", "roll2", 3);
+insert into student (email, first_name, roll_number, total_credits) values ("2@gma.com", "student2", "roll2", 3);
+insert into student (email, first_name, roll_number, total_credits) values ("3@gma.com", "student3", "roll3", 3);
+insert into student (email, first_name, roll_number, total_credits) values ("4@gma.com", "student4", "roll4", 3);
+insert into student (email, first_name, roll_number, total_credits) values ("5@gma.com", "student5", "roll5", 3);
+insert into student (email, first_name, roll_number, total_credits) values ("6@gma.com", "student6", "roll6", 3);
+
+
+insert into student_course (course_id, student_id) values (2, 4);
+insert into student_course (course_id, student_id) values (2, 3);
+insert into student_course (course_id, student_id) values (1, 3);
+insert into student_course (course_id, student_id) values (1, 2);
+insert into student_course (course_id, student_id) values (1, 1);
+
+ update course set employeeId = 2;
+ update course set employeeId = 6 where id = 3;
+
+
+ insert into course_schedule (Day, building, room, time, course_id) values ("Monday", "Ramanujan", "R-103", '09:00:00', 1);
+ insert into course_schedule (Day, building, room, time, course_id) values ("Tuesday", "Ramanujan", "R-103", '09:00:00', 3);
+ insert into course_schedule (Day, building, room, time, course_id) values ("Saturday", "Ramanujan", "R-103", '09:00:00', 1);
+ insert into course_schedule (Day, building, room, time, course_id) values ("Wednesday", "Ramanujan", "R-103", '09:00:00', 1);
+ insert into course_schedule (Day, building, room, time, course_id) values ("Thursday", "Ramanujan", "R-103", '09:00:00', 3);
+ insert into course_schedule (Day, building, room, time, course_id) values ("Monday", "Ramanujan", "R-103", '11:30:00', 2);
+ insert into course_schedule (Day, building, room, time, course_id) values ("Thursday", "Ramanujan", "R-103", '11:30:00', 2);
